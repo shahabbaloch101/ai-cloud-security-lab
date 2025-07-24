@@ -1,0 +1,7 @@
+FROM python:3.9-slim
+
+WORKDIR /tools
+COPY ../tooling/ ./tooling/
+RUN pip install requests
+
+CMD ["/bin/bash"]
