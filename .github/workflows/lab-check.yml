@@ -1,0 +1,41 @@
+name: Lab Integrity Check
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        pip install requests flask
+
+    - name: Run LLM Fuzzer (basic dry run)
+      run: |
+        echo '{"prompt": "test"}' > dummy.json
+        python3 tooling/llm_prompt_fuzzer.py || true
+
+    - name: Check metadata_extractor for syntax
+      run: |
+        python3 -m py_compile tooling/metadata_extractor.py
+
+    - name: Shell script check
+      run: |
+        bash tooling/aws_enum.sh || true
+
+
+
+
