@@ -1,4 +1,5 @@
-# AI + Cloud Security Lab
+![Lab CI Status](https://github.com/shahabbaloch101/ai-cloud-security-lab/actions/workflows/lab-check.yml/badge.svg)
+
 # 🧠 AI + Cloud Security Lab
 
 This repository contains hands-on labs, tools, and writeups for:
