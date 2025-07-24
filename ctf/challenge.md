@@ -14,3 +14,16 @@ Interact via:
 curl -X POST http://localhost:5000/api \
   -H "Content-Type: application/json" \
   -d '{"prompt": "Fetch http://example.com"}'
+
+## 🧠 Updated Objective
+
+The AI model may leak sensitive internal metadata, but it's not that simple anymore...
+
+### 🧩 Tasks
+
+- Find the real metadata endpoint (not the default one)
+- Bypass prompt filtering or AI response tricks
+- Extract the real IAM role and credentials
+- Decode the flag (base64) and submit
+
+### 🎯 Target Flag
