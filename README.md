@@ -4,10 +4,10 @@
 
 This repository contains hands-on labs, tools, and writeups for:
 
-- 🛡️ AI Security (Prompt Injection, Model Poisoning)
-- ☁️ Cloud Pentesting (AWS, IAM Escalation, Metadata Exploits)
-- 🧰 Tooling & Automation Scripts
-- 🐳 Docker-based lab simulation
+- AI Security (Prompt Injection, Model Poisoning)
+- Cloud Pentesting (AWS, IAM Escalation, Metadata Exploits)
+- Tooling & Automation Scripts
+- Docker-based lab simulation
 
 ## 🔧 Tools
 - LLM Prompt Fuzzer
