@@ -1,0 +1,6 @@
+Flask==3.0.3
+requests==2.32.3
+itsdangerous==2.2.0
+Werkzeug==3.0.3
+pytest==8.2.1
+regex==2024.5.15
