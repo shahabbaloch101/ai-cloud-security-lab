@@ -20,3 +20,5 @@ Run the full Docker lab with:
 ```bash
 cd docker
 docker-compose up --build
+
+⚠️ Note: Some labs are still experimental and under active testing.
